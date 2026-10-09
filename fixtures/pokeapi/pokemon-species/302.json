@@ -1,0 +1,425 @@
+{
+  "id": 302,
+  "name": "sableye",
+  "color": {
+    "name": "purple",
+    "url": "https://pokeapi.co/api/v2/pokemon-color/7/"
+  },
+  "generation": {
+    "name": "generation-iii",
+    "url": "https://pokeapi.co/api/v2/generation/3/"
+  },
+  "is_legendary": false,
+  "is_mythical": false,
+  "genera": [
+    {
+      "genus": "Pokémon Oscuridad",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      }
+    },
+    {
+      "genus": "Darkness Pokémon",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      }
+    }
+  ],
+  "names": [
+    {
+      "name": "Sableye",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      }
+    },
+    {
+      "name": "Sableye",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      }
+    }
+  ],
+  "flavor_text_entries": [
+    {
+      "flavor_text": "SABLEYE lead quiet lives deep inside\ncaverns. They are feared, however,\nbecause these POKéMON are thought to\fsteal the spirits of people when their\neyes burn with a sinister glow in the\ndarkness.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "ruby",
+        "url": "https://pokeapi.co/api/v2/version/7/"
+      }
+    },
+    {
+      "flavor_text": "SABLEYE digs the ground with sharpened\nclaws to find rocks that it eats.\nSubstances in the eaten rocks\fcrystallize and rise up to the POKéMON’s\nbody surface.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "sapphire",
+        "url": "https://pokeapi.co/api/v2/version/8/"
+      }
+    },
+    {
+      "flavor_text": "It digs branching holes in caves using its\nsharp claws in search of food--raw gems.\nA SABLEYE lurks in darkness and is seen\nonly rarely.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "emerald",
+        "url": "https://pokeapi.co/api/v2/version/9/"
+      }
+    },
+    {
+      "flavor_text": "It feeds on gemstone crystals.\nIn darkness, its eyes sparkle with the\nglitter of jewels.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "firered",
+        "url": "https://pokeapi.co/api/v2/version/10/"
+      }
+    },
+    {
+      "flavor_text": "It feeds on gemstone crystals.\nIn darkness, its eyes sparkle with the\nglitter of jewels.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "leafgreen",
+        "url": "https://pokeapi.co/api/v2/version/11/"
+      }
+    },
+    {
+      "flavor_text": "It hides in the darkness of caves.\nIts diet of gems has transformed\nits eyes into gemstones.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "diamond",
+        "url": "https://pokeapi.co/api/v2/version/12/"
+      }
+    },
+    {
+      "flavor_text": "It hides in the darkness of caves.\nIts diet of gems has transformed\nits eyes into gemstones.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "pearl",
+        "url": "https://pokeapi.co/api/v2/version/13/"
+      }
+    },
+    {
+      "flavor_text": "It hides in the darkness of caves.\nIts diet of gems has transformed\nits eyes into gemstones.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "platinum",
+        "url": "https://pokeapi.co/api/v2/version/14/"
+      }
+    },
+    {
+      "flavor_text": "It dwells in the darkness of caves.\nIt uses its sharp claws to dig up\ngems to nourish itself.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "heartgold",
+        "url": "https://pokeapi.co/api/v2/version/15/"
+      }
+    },
+    {
+      "flavor_text": "It dwells in the darkness of caves.\nIt uses its sharp claws to dig up\ngems to nourish itself.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "soulsilver",
+        "url": "https://pokeapi.co/api/v2/version/16/"
+      }
+    },
+    {
+      "flavor_text": "It hides in the darkness of caves.\nIts diet of gems has transformed\nits eyes into gemstones.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "black",
+        "url": "https://pokeapi.co/api/v2/version/17/"
+      }
+    },
+    {
+      "flavor_text": "It hides in the darkness of caves.\nIts diet of gems has transformed\nits eyes into gemstones.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "white",
+        "url": "https://pokeapi.co/api/v2/version/18/"
+      }
+    },
+    {
+      "flavor_text": "It hides in the darkness of caves.\nIts diet of gems has transformed\nits eyes into gemstones.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "black-2",
+        "url": "https://pokeapi.co/api/v2/version/21/"
+      }
+    },
+    {
+      "flavor_text": "It hides in the darkness of caves.\nIts diet of gems has transformed\nits eyes into gemstones.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "white-2",
+        "url": "https://pokeapi.co/api/v2/version/22/"
+      }
+    },
+    {
+      "flavor_text": "Se oculta en cavernas oscuras. De tanto comer gemas,\nsus ojos son piedras preciosas.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "x",
+        "url": "https://pokeapi.co/api/v2/version/23/"
+      }
+    },
+    {
+      "flavor_text": "It hides in the darkness of caves. Its diet of gems\nhas transformed its eyes into gemstones.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "x",
+        "url": "https://pokeapi.co/api/v2/version/23/"
+      }
+    },
+    {
+      "flavor_text": "Hace su guarida en cuevas oscuras. Usa sus afiladas\ngarras para desenterrar las gemas que se come.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "y",
+        "url": "https://pokeapi.co/api/v2/version/24/"
+      }
+    },
+    {
+      "flavor_text": "It dwells in the darkness of caves. It uses its sharp\nclaws to dig up gems to nourish itself.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "y",
+        "url": "https://pokeapi.co/api/v2/version/24/"
+      }
+    },
+    {
+      "flavor_text": "Los Sableye hacen una vida muy tranquila en cavernas, pero\nson muy temidos. Se dice que, cuando los ojos les brillan de\nmanera siniestra, están robándole el alma a alguien.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "omega-ruby",
+        "url": "https://pokeapi.co/api/v2/version/25/"
+      }
+    },
+    {
+      "flavor_text": "Sableye lead quiet lives deep inside caverns.\nThey are feared, however, because these Pokémon are\nthought to steal the spirits of people when their eyes burn\nwith a sinister glow in the darkness.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "omega-ruby",
+        "url": "https://pokeapi.co/api/v2/version/25/"
+      }
+    },
+    {
+      "flavor_text": "Sableye cava en el suelo para buscar con las afiladas garras\nque tiene rocas para comer. Las sustancias que hay en las\nrocas que ingiere se solidifican y se le quedan en la piel.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "alpha-sapphire",
+        "url": "https://pokeapi.co/api/v2/version/26/"
+      }
+    },
+    {
+      "flavor_text": "Sableye digs the ground with sharpened claws to find rocks\nthat it eats. Substances in the eaten rocks crystallize and rise\nup to the Pokémon’s body surface.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "alpha-sapphire",
+        "url": "https://pokeapi.co/api/v2/version/26/"
+      }
+    },
+    {
+      "flavor_text": "Le gustan mucho las joyas, por lo que suele\nmerodear cerca de los Carbink. Sin embargo, los\nGabite siempre se le suelen adelantar.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "sun",
+        "url": "https://pokeapi.co/api/v2/version/27/"
+      }
+    },
+    {
+      "flavor_text": "It’s a fiend for gemstones, so it stalks Carbink.\nUnfortunately, Gabite almost always grabs\nthem first.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "sun",
+        "url": "https://pokeapi.co/api/v2/version/27/"
+      }
+    },
+    {
+      "flavor_text": "Se dice que, cuando las gemas de los ojos\nde estos Pokémon brillan de manera siniestra,\nestán robándole el alma a alguien.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "moon",
+        "url": "https://pokeapi.co/api/v2/version/28/"
+      }
+    },
+    {
+      "flavor_text": "This Pokémon is feared. When its gemstone eyes\nbegin to glow with a sinister shine, it’s believed\nthat Sableye will steal people’s spirits away.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "moon",
+        "url": "https://pokeapi.co/api/v2/version/28/"
+      }
+    },
+    {
+      "flavor_text": "Horada la tierra con sus duras garras y extrae\ngemas que luego desmenuza con sus gruesos\ncolmillos. Los Carbink son su manjar predilecto.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "ultra-sun",
+        "url": "https://pokeapi.co/api/v2/version/29/"
+      }
+    },
+    {
+      "flavor_text": "It digs through the ground with its hard claws\nand crunches down gems with its thick pointy\nteeth. Carbink is its favorite food.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "ultra-sun",
+        "url": "https://pokeapi.co/api/v2/version/29/"
+      }
+    },
+    {
+      "flavor_text": "Algunos de los elementos de las gemas con las\nque se alimenta emergen en su piel creando\npatrones variopintos.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "ultra-moon",
+        "url": "https://pokeapi.co/api/v2/version/30/"
+      }
+    },
+    {
+      "flavor_text": "Materials from gems it has eaten float to the\nsurface of its body and can form an infinite\nnumber of patterns among individuals.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "ultra-moon",
+        "url": "https://pokeapi.co/api/v2/version/30/"
+      }
+    },
+    {
+      "flavor_text": "Se dice que, cuando las gemas de los ojos de\nestos Pokémon tan temidos brillan de manera\nsiniestra, están robándole el alma a alguien.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "sword",
+        "url": "https://pokeapi.co/api/v2/version/33/"
+      }
+    },
+    {
+      "flavor_text": "This Pokémon is feared. When its gemstone eyes\nbegin to glow with a sinister shine, it’s believed\nthat Sableye will steal people’s spirits away.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "sword",
+        "url": "https://pokeapi.co/api/v2/version/33/"
+      }
+    },
+    {
+      "flavor_text": "Se alimenta de gemas. En la oscuridad, los ojos\nle brillan con el destello de las piedras preciosas.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "shield",
+        "url": "https://pokeapi.co/api/v2/version/34/"
+      }
+    },
+    {
+      "flavor_text": "It feeds on gemstone crystals. In darkness, its\neyes sparkle with the glitter of jewels.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "shield",
+        "url": "https://pokeapi.co/api/v2/version/34/"
+      }
+    }
+  ],
+  "evolution_chain": {
+    "url": "https://pokeapi.co/api/v2/evolution-chain/149/"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": 440,
+  "name": "happiny",
+  "height": 6,
+  "weight": 244,
+  "types": [
+    {
+      "slot": 1,
+      "type": {
+        "name": "normal",
+        "url": "https://pokeapi.co/api/v2/type/1/"
+      }
+    }
+  ],
+  "stats": [
+    {
+      "base_stat": 100,
+      "stat": {
+        "name": "hp"
+      }
+    },
+    {
+      "base_stat": 5,
+      "stat": {
+        "name": "attack"
+      }
+    },
+    {
+      "base_stat": 5,
+      "stat": {
+        "name": "defense"
+      }
+    },
+    {
+      "base_stat": 15,
+      "stat": {
+        "name": "special-attack"
+      }
+    },
+    {
+      "base_stat": 65,
+      "stat": {
+        "name": "special-defense"
+      }
+    },
+    {
+      "base_stat": 30,
+      "stat": {
+        "name": "speed"
+      }
+    }
+  ],
+  "species": {
+    "name": "happiny",
+    "url": "https://pokeapi.co/api/v2/pokemon-species/440/"
+  },
+  "sprites": {
+    "other": {
+      "official-artwork": {
+        "versions": {
+          "generation-i": {
+            "red-and-blue": {
+              "front_default": null
+            },
+            "red-and-green": {
+              "front_default": null
+            }
+          },
+          "generation-ii": {
+            "gold-and-silver": {
+              "front_default": null
+            }
+          }
+        },
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/440.png",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/440.png"
+      }
+    }
+  },
+  "cries": {
+    "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/440.ogg",
+    "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/440.ogg"
+  }
+}

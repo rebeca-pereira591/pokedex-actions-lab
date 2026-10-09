@@ -1,0 +1,381 @@
+{
+  "id": 470,
+  "name": "leafeon",
+  "color": {
+    "name": "green",
+    "url": "https://pokeapi.co/api/v2/pokemon-color/5/"
+  },
+  "generation": {
+    "name": "generation-iv",
+    "url": "https://pokeapi.co/api/v2/generation/4/"
+  },
+  "is_legendary": false,
+  "is_mythical": false,
+  "genera": [
+    {
+      "genus": "Pokémon Verdor",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      }
+    },
+    {
+      "genus": "Verdant Pokémon",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      }
+    }
+  ],
+  "names": [
+    {
+      "name": "Leafeon",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      }
+    },
+    {
+      "name": "Leafeon",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      }
+    }
+  ],
+  "flavor_text_entries": [
+    {
+      "flavor_text": "Just like a plant, it uses\nphotosynthesis. As a result, it is\nalways enveloped in clear air.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "diamond",
+        "url": "https://pokeapi.co/api/v2/version/12/"
+      }
+    },
+    {
+      "flavor_text": "Just like a plant, it uses\nphotosynthesis. As a result, it is\nalways enveloped in clear air.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "pearl",
+        "url": "https://pokeapi.co/api/v2/version/13/"
+      }
+    },
+    {
+      "flavor_text": "It basically does not fight. With\ncells similar to those of plants, it\ncan perform photosynthesis.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "platinum",
+        "url": "https://pokeapi.co/api/v2/version/14/"
+      }
+    },
+    {
+      "flavor_text": "When you see LEAFEON asleep in a patch\nof sunshine, you’ll know it is using\nphotosynthesis to produce clean air.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "heartgold",
+        "url": "https://pokeapi.co/api/v2/version/15/"
+      }
+    },
+    {
+      "flavor_text": "When you see LEAFEON asleep in a patch\nof sunshine, you’ll know it is using\nphotosynthesis to produce clean air.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "soulsilver",
+        "url": "https://pokeapi.co/api/v2/version/16/"
+      }
+    },
+    {
+      "flavor_text": "It basically does not fight. With\ncells similar to those of plants, it\ncan perform photosynthesis.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "black",
+        "url": "https://pokeapi.co/api/v2/version/17/"
+      }
+    },
+    {
+      "flavor_text": "It basically does not fight. With\ncells similar to those of plants, it\ncan perform photosynthesis.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "white",
+        "url": "https://pokeapi.co/api/v2/version/18/"
+      }
+    },
+    {
+      "flavor_text": "With cells similar to those of plants,\nit performs photosynthesis inside its\nbody and creates pure air.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "black-2",
+        "url": "https://pokeapi.co/api/v2/version/21/"
+      }
+    },
+    {
+      "flavor_text": "With cells similar to those of plants,\nit performs photosynthesis inside its\nbody and creates pure air.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "white-2",
+        "url": "https://pokeapi.co/api/v2/version/22/"
+      }
+    },
+    {
+      "flavor_text": "En días soleados duerme y hace la fotosíntesis,\nemitiendo aire puro a su alrededor.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "x",
+        "url": "https://pokeapi.co/api/v2/version/23/"
+      }
+    },
+    {
+      "flavor_text": "When you see Leafeon asleep in a patch of\nsunshine, you’ll know it is using photosynthesis\nto produce clean air.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "x",
+        "url": "https://pokeapi.co/api/v2/version/23/"
+      }
+    },
+    {
+      "flavor_text": "Al igual que una planta, hace la fotosíntesis. Como\nconsecuencia, siempre está rodeado de aire puro.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "y",
+        "url": "https://pokeapi.co/api/v2/version/24/"
+      }
+    },
+    {
+      "flavor_text": "Just like a plant, it uses photosynthesis. As a result,\nit is always enveloped in clear air.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "y",
+        "url": "https://pokeapi.co/api/v2/version/24/"
+      }
+    },
+    {
+      "flavor_text": "En días soleados duerme y hace la fotosíntesis, emitiendo aire\npuro a su alrededor.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "omega-ruby",
+        "url": "https://pokeapi.co/api/v2/version/25/"
+      }
+    },
+    {
+      "flavor_text": "When you see Leafeon asleep in a patch of\nsunshine, you’ll know it is using photosynthesis\nto produce clean air.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "omega-ruby",
+        "url": "https://pokeapi.co/api/v2/version/25/"
+      }
+    },
+    {
+      "flavor_text": "Al igual que una planta, hace la fotosíntesis. Como\nconsecuencia, siempre está rodeado de aire puro.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "alpha-sapphire",
+        "url": "https://pokeapi.co/api/v2/version/26/"
+      }
+    },
+    {
+      "flavor_text": "Just like a plant, it uses photosynthesis. As a result,\nit is always enveloped in clear air.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "alpha-sapphire",
+        "url": "https://pokeapi.co/api/v2/version/26/"
+      }
+    },
+    {
+      "flavor_text": "Su estructura celular se asemeja más a la de las\nplantas que a la de los animales. Puede obtener\nenergía sin alimentos gracias a la fotosíntesis.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "sun",
+        "url": "https://pokeapi.co/api/v2/version/27/"
+      }
+    },
+    {
+      "flavor_text": "Its cellular composition is closer to that of a\nplant than an animal. It uses photosynthesis to\nproduce its energy supply without eating food.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "sun",
+        "url": "https://pokeapi.co/api/v2/version/27/"
+      }
+    },
+    {
+      "flavor_text": "Los Leafeon jóvenes desprenden un intenso\naroma a hierba fresca, mientras que el olor de\nlos mayores es más semejante a la hojarasca.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "moon",
+        "url": "https://pokeapi.co/api/v2/version/28/"
+      }
+    },
+    {
+      "flavor_text": "The younger they are, the more they smell like\nfresh grass. With age, their fragrance takes on\nthe odor of fallen leaves.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "moon",
+        "url": "https://pokeapi.co/api/v2/version/28/"
+      }
+    },
+    {
+      "flavor_text": "A pesar de evitar a toda costa los combates, si\nha de proteger a sus amigos, no duda en usar la\nhoja de la cola como una afilada espada.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "ultra-sun",
+        "url": "https://pokeapi.co/api/v2/version/29/"
+      }
+    },
+    {
+      "flavor_text": "Although it doesn’t like disputes, it will sharpen\nthe leaf on its tail into a blade and fight if it has\nto protect its friends.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "ultra-sun",
+        "url": "https://pokeapi.co/api/v2/version/29/"
+      }
+    },
+    {
+      "flavor_text": "Realiza la fotosíntesis para obtener nutrientes.\nHabita en la apacible espesura de los bosques\nbañados por arroyos de agua cristalina.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "ultra-moon",
+        "url": "https://pokeapi.co/api/v2/version/30/"
+      }
+    },
+    {
+      "flavor_text": "It gets its nutrition from photosynthesis. It lives\na quiet life deep in forests where clean\nrivers flow.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "ultra-moon",
+        "url": "https://pokeapi.co/api/v2/version/30/"
+      }
+    },
+    {
+      "flavor_text": "El peculiar aroma que desprenden sus hojas es\nmuy apreciado por los habitantes de Galar y se\nusa en la elaboración de codiciados perfumes.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "sword",
+        "url": "https://pokeapi.co/api/v2/version/33/"
+      }
+    },
+    {
+      "flavor_text": "Galarians favor the distinctive aroma that drifts\nfrom this Pokémon’s leaves. There’s a popular\nperfume made using that scent.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "sword",
+        "url": "https://pokeapi.co/api/v2/version/33/"
+      }
+    },
+    {
+      "flavor_text": "Se siente muy orgulloso de su cola afilada como\nuna espada, con la que es capaz de cortar en dos\nel tronco de un árbol grueso.",
+      "language": {
+        "name": "es",
+        "url": "https://pokeapi.co/api/v2/language/7/"
+      },
+      "version": {
+        "name": "shield",
+        "url": "https://pokeapi.co/api/v2/version/34/"
+      }
+    },
+    {
+      "flavor_text": "This Pokémon’s tail is blade sharp, with a\nfantastic cutting edge that can slice right\nthough large trees.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "shield",
+        "url": "https://pokeapi.co/api/v2/version/34/"
+      }
+    },
+    {
+      "flavor_text": "Cells similar to those of plants have been found in its fur.\nIts hard tail can fell a large tree with one stroke, and the tail's\nsharpness exceeds even that of a sword crafted by a master.",
+      "language": {
+        "name": "en",
+        "url": "https://pokeapi.co/api/v2/language/9/"
+      },
+      "version": {
+        "name": "legends-arceus",
+        "url": "https://pokeapi.co/api/v2/version/39/"
+      }
+    }
+  ],
+  "evolution_chain": {
+    "url": "https://pokeapi.co/api/v2/evolution-chain/67/"
+  }
+}

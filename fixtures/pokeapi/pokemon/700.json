@@ -1,0 +1,84 @@
+{
+  "id": 700,
+  "name": "sylveon",
+  "height": 10,
+  "weight": 235,
+  "types": [
+    {
+      "slot": 1,
+      "type": {
+        "name": "fairy",
+        "url": "https://pokeapi.co/api/v2/type/18/"
+      }
+    }
+  ],
+  "stats": [
+    {
+      "base_stat": 95,
+      "stat": {
+        "name": "hp"
+      }
+    },
+    {
+      "base_stat": 65,
+      "stat": {
+        "name": "attack"
+      }
+    },
+    {
+      "base_stat": 65,
+      "stat": {
+        "name": "defense"
+      }
+    },
+    {
+      "base_stat": 110,
+      "stat": {
+        "name": "special-attack"
+      }
+    },
+    {
+      "base_stat": 130,
+      "stat": {
+        "name": "special-defense"
+      }
+    },
+    {
+      "base_stat": 60,
+      "stat": {
+        "name": "speed"
+      }
+    }
+  ],
+  "species": {
+    "name": "sylveon",
+    "url": "https://pokeapi.co/api/v2/pokemon-species/700/"
+  },
+  "sprites": {
+    "other": {
+      "official-artwork": {
+        "versions": {
+          "generation-i": {
+            "red-and-blue": {
+              "front_default": null
+            },
+            "red-and-green": {
+              "front_default": null
+            }
+          },
+          "generation-ii": {
+            "gold-and-silver": {
+              "front_default": null
+            }
+          }
+        },
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/700.png",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png"
+      }
+    }
+  },
+  "cries": {
+    "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/700.ogg",
+    "legacy": null
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": 302,
+  "name": "sableye",
+  "height": 5,
+  "weight": 110,
+  "types": [
+    {
+      "slot": 1,
+      "type": {
+        "name": "dark",
+        "url": "https://pokeapi.co/api/v2/type/17/"
+      }
+    },
+    {
+      "slot": 2,
+      "type": {
+        "name": "ghost",
+        "url": "https://pokeapi.co/api/v2/type/8/"
+      }
+    }
+  ],
+  "stats": [
+    {
+      "base_stat": 50,
+      "stat": {
+        "name": "hp"
+      }
+    },
+    {
+      "base_stat": 75,
+      "stat": {
+        "name": "attack"
+      }
+    },
+    {
+      "base_stat": 75,
+      "stat": {
+        "name": "defense"
+      }
+    },
+    {
+      "base_stat": 65,
+      "stat": {
+        "name": "special-attack"
+      }
+    },
+    {
+      "base_stat": 65,
+      "stat": {
+        "name": "special-defense"
+      }
+    },
+    {
+      "base_stat": 50,
+      "stat": {
+        "name": "speed"
+      }
+    }
+  ],
+  "species": {
+    "name": "sableye",
+    "url": "https://pokeapi.co/api/v2/pokemon-species/302/"
+  },
+  "sprites": {
+    "other": {
+      "official-artwork": {
+        "versions": {
+          "generation-i": {
+            "red-and-blue": {
+              "front_default": null
+            },
+            "red-and-green": {
+              "front_default": null
+            }
+          },
+          "generation-ii": {
+            "gold-and-silver": {
+              "front_default": null
+            }
+          }
+        },
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/302.png",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png"
+      }
+    }
+  },
+  "cries": {
+    "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/302.ogg",
+    "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/302.ogg"
+  }
+}

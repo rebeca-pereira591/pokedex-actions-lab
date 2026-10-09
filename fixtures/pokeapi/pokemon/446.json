@@ -1,0 +1,84 @@
+{
+  "id": 446,
+  "name": "munchlax",
+  "height": 6,
+  "weight": 1050,
+  "types": [
+    {
+      "slot": 1,
+      "type": {
+        "name": "normal",
+        "url": "https://pokeapi.co/api/v2/type/1/"
+      }
+    }
+  ],
+  "stats": [
+    {
+      "base_stat": 135,
+      "stat": {
+        "name": "hp"
+      }
+    },
+    {
+      "base_stat": 85,
+      "stat": {
+        "name": "attack"
+      }
+    },
+    {
+      "base_stat": 40,
+      "stat": {
+        "name": "defense"
+      }
+    },
+    {
+      "base_stat": 40,
+      "stat": {
+        "name": "special-attack"
+      }
+    },
+    {
+      "base_stat": 85,
+      "stat": {
+        "name": "special-defense"
+      }
+    },
+    {
+      "base_stat": 5,
+      "stat": {
+        "name": "speed"
+      }
+    }
+  ],
+  "species": {
+    "name": "munchlax",
+    "url": "https://pokeapi.co/api/v2/pokemon-species/446/"
+  },
+  "sprites": {
+    "other": {
+      "official-artwork": {
+        "versions": {
+          "generation-i": {
+            "red-and-blue": {
+              "front_default": null
+            },
+            "red-and-green": {
+              "front_default": null
+            }
+          },
+          "generation-ii": {
+            "gold-and-silver": {
+              "front_default": null
+            }
+          }
+        },
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/446.png",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/446.png"
+      }
+    }
+  },
+  "cries": {
+    "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/446.ogg",
+    "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/446.ogg"
+  }
+}
