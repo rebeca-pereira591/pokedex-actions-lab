@@ -28,6 +28,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  /* un fieldset mide por defecto lo que su contenido: sin esto, en el celular los chips en una sola
+     fila estiran la página más que la pantalla */
+  min-inline-size: 0;
   margin: 0;
   padding: 0;
   border: 0;
