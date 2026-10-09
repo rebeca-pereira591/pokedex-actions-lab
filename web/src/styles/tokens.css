@@ -1,0 +1,77 @@
+/* Variables del diseño aprobado. Todos los colores, tipografías y efectos salen de acá.
+   Look único y oscuro a propósito: casi negro, con un sol que sube desde abajo. */
+:root {
+  color-scheme: dark;
+
+  --bg: #040404;
+  --fg: #f3efe9;
+  --muted: #a39c95;
+  --line: rgba(255, 255, 255, 0.12);
+  --surface-2: rgba(255, 255, 255, 0.06);
+  --accent: #ff7a3d;
+  --bad: #ff8a80;
+  --good: #7fe0a8;
+  --ink-on-light: #15161f;
+  --ink-on-dark: #ffffff;
+
+  /* el sol */
+  --sun-core: #ffd28a;
+  --sun: #ff7a3d;
+  --sun-deep: #8a2a14;
+
+  /* superficie de las tarjetas y paneles */
+  --panel-top: rgba(255, 255, 255, 0.075);
+  --panel-mid: rgba(255, 255, 255, 0.015);
+  --panel-base: rgba(8, 7, 6, 0.82);
+  --panel-edge: rgba(255, 255, 255, 0.17);
+
+  /* especiales: metal pulido */
+  --legend-1: #ffe08a;
+  --legend-2: #f5a623;
+  --legend-3: #b8741a;
+  --legend-ink: #241500;
+  --legend-ink-muted: #3f2905;
+  --myth-1: #ffc7ee;
+  --myth-2: #f08bd8;
+  --myth-3: #7a2a9e;
+  --myth-4: #5e1f86;
+  --myth-ink: #1b0429;
+  --myth-ink-muted: #2e0846;
+
+  /* tipografías */
+  --font-title: "Anton", "Impact", "Arial Narrow", sans-serif;
+  --font-display: "Chakra Petch", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+
+  /* los 18 tipos */
+  --type-normal: #a8a77a;
+  --type-fire: #ee8130;
+  --type-water: #6390f0;
+  --type-electric: #f7d02c;
+  --type-grass: #7ac74c;
+  --type-ice: #96d9d6;
+  --type-fighting: #c22e28;
+  --type-poison: #a33ea1;
+  --type-ground: #e2bf65;
+  --type-flying: #a98ff3;
+  --type-psychic: #f95587;
+  --type-bug: #a6b91a;
+  --type-rock: #b6a136;
+  --type-ghost: #735797;
+  --type-dragon: #6f35fc;
+  --type-dark: #705746;
+  --type-steel: #b7b7ce;
+  --type-fairy: #d685ad;
+
+  /* color de especie (campo color de PokeAPI): respaldo del brillo cuando no se puede leer el artwork */
+  --species-black: #8c8fa6;
+  --species-blue: #4da3ff;
+  --species-brown: #c98a55;
+  --species-gray: #a9afc0;
+  --species-green: #4fd86a;
+  --species-pink: #ff7ac8;
+  --species-purple: #a96cff;
+  --species-red: #ff5147;
+  --species-white: #eef1f7;
+  --species-yellow: #ffd93d;
+}
