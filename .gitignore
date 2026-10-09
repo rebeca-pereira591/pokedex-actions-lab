@@ -1,0 +1,24 @@
+# .NET
+bin/
+obj/
+TestResults/
+*.user
+
+# Node
+node_modules/
+dist/
+storybook-static/
+coverage/
+*.log
+
+# Editores y sistema
+.vs/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Variables locales
+.env.local
+.env.*.local
