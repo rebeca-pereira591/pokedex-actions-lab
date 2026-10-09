@@ -1,0 +1,48 @@
+.controls {
+  display: grid;
+  gap: 12px;
+  container-type: inline-size;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.row input,
+.row select {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* en el celular, los tipos se deslizan en una sola fila */
+@container (max-width: 520px) {
+  .types {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+  }
+
+  .row label:not(.search) {
+    flex: 1 1 auto;
+  }
+}

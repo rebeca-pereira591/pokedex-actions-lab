@@ -1,0 +1,3 @@
+# Paquetes a los que se les permite correr scripts al instalarse (pnpm los bloquea por defecto).
+allowBuilds:
+  esbuild: true

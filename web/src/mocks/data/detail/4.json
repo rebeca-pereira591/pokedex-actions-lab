@@ -1,0 +1,120 @@
+{
+  "id": 4,
+  "name": "Charmander",
+  "types": [
+    {
+      "name": "fire",
+      "label": "Fuego"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+  "speciesColor": "red",
+  "total": 309,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 1,
+  "category": "Pokémon Lagartija",
+  "flavorText": "Este Pokémon nace con una llama en la punta de la cola. Si se le apagara, fallecería.",
+  "heightMeters": 0.6,
+  "weightKg": 8.5,
+  "stats": {
+    "hp": 39,
+    "attack": 52,
+    "defense": 43,
+    "specialAttack": 60,
+    "specialDefense": 50,
+    "speed": 65
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fire",
+        "label": "Fuego"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "water",
+        "label": "Agua"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "grass",
+        "label": "Planta"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "ice",
+        "label": "Hielo"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "ground",
+        "label": "Tierra"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "rock",
+        "label": "Roca"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "steel",
+        "label": "Acero"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "fairy",
+        "label": "Hada"
+      },
+      "multiplier": 0.5
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 4,
+        "name": "Charmander",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 5,
+        "name": "Charmeleon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
+        "trigger": "Nv. 16"
+      }
+    ],
+    [
+      {
+        "id": 6,
+        "name": "Charizard",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+        "trigger": "Nv. 36"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/4.ogg"
+}

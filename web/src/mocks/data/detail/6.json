@@ -1,0 +1,131 @@
+{
+  "id": 6,
+  "name": "Charizard",
+  "types": [
+    {
+      "name": "fire",
+      "label": "Fuego"
+    },
+    {
+      "name": "flying",
+      "label": "Volador"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+  "speciesColor": "red",
+  "total": 534,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 1,
+  "category": "Pokémon Llama",
+  "flavorText": "Sus potentes alas le permiten volar a una altura de 1400 m. Escupe llamaradas que llegan a alcanzar temperaturas elevadísimas.",
+  "heightMeters": 1.7,
+  "weightKg": 90.5,
+  "stats": {
+    "hp": 78,
+    "attack": 84,
+    "defense": 78,
+    "specialAttack": 109,
+    "specialDefense": 85,
+    "speed": 100
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fire",
+        "label": "Fuego"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "water",
+        "label": "Agua"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "electric",
+        "label": "Eléctrico"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "grass",
+        "label": "Planta"
+      },
+      "multiplier": 0.25
+    },
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "ground",
+        "label": "Tierra"
+      },
+      "multiplier": 0
+    },
+    {
+      "type": {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      "multiplier": 0.25
+    },
+    {
+      "type": {
+        "name": "rock",
+        "label": "Roca"
+      },
+      "multiplier": 4
+    },
+    {
+      "type": {
+        "name": "steel",
+        "label": "Acero"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "fairy",
+        "label": "Hada"
+      },
+      "multiplier": 0.5
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 4,
+        "name": "Charmander",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 5,
+        "name": "Charmeleon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
+        "trigger": "Nv. 16"
+      }
+    ],
+    [
+      {
+        "id": 6,
+        "name": "Charizard",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+        "trigger": "Nv. 36"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/6.ogg"
+}

@@ -1,0 +1,76 @@
+{
+  "id": 151,
+  "name": "Mew",
+  "types": [
+    {
+      "name": "psychic",
+      "label": "Psíquico"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
+  "speciesColor": "pink",
+  "total": 600,
+  "isLegendary": false,
+  "isMythical": true,
+  "generation": 1,
+  "category": "Pokémon Nueva Especie",
+  "flavorText": "Si se observa a través de un microscopio, puede distinguirse cuán corto, fino y delicado es el pelaje de este Pokémon.",
+  "heightMeters": 0.4,
+  "weightKg": 4,
+  "stats": {
+    "hp": 100,
+    "attack": 100,
+    "defense": 100,
+    "specialAttack": 100,
+    "specialDefense": 100,
+    "speed": 100
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "psychic",
+        "label": "Psíquico"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "ghost",
+        "label": "Fantasma"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "dark",
+        "label": "Siniestro"
+      },
+      "multiplier": 2
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 151,
+        "name": "Mew",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
+        "trigger": null
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/151.ogg"
+}

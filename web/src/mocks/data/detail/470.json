@@ -1,0 +1,154 @@
+{
+  "id": 470,
+  "name": "Leafeon",
+  "types": [
+    {
+      "name": "grass",
+      "label": "Planta"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png",
+  "speciesColor": "green",
+  "total": 525,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 4,
+  "category": "Pokémon Verdor",
+  "flavorText": "Se siente muy orgulloso de su cola afilada como una espada, con la que es capaz de cortar en dos el tronco de un árbol grueso.",
+  "heightMeters": 1,
+  "weightKg": 25.5,
+  "stats": {
+    "hp": 65,
+    "attack": 110,
+    "defense": 130,
+    "specialAttack": 60,
+    "specialDefense": 65,
+    "speed": 95
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fire",
+        "label": "Fuego"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "water",
+        "label": "Agua"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "electric",
+        "label": "Eléctrico"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "grass",
+        "label": "Planta"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "ice",
+        "label": "Hielo"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "poison",
+        "label": "Veneno"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "ground",
+        "label": "Tierra"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "flying",
+        "label": "Volador"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      "multiplier": 2
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 133,
+        "name": "Eevee",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 134,
+        "name": "Vaporeon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png",
+        "trigger": "Piedra Agua"
+      },
+      {
+        "id": 135,
+        "name": "Jolteon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png",
+        "trigger": "Piedra Trueno"
+      },
+      {
+        "id": 136,
+        "name": "Flareon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png",
+        "trigger": "Piedra Fuego"
+      },
+      {
+        "id": 196,
+        "name": "Espeon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png",
+        "trigger": "Amistad, de día"
+      },
+      {
+        "id": 197,
+        "name": "Umbreon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png",
+        "trigger": "Amistad, de noche"
+      },
+      {
+        "id": 470,
+        "name": "Leafeon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png",
+        "trigger": "Piedra Hoja"
+      },
+      {
+        "id": 471,
+        "name": "Glaceon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png",
+        "trigger": "Piedra Hielo"
+      },
+      {
+        "id": 700,
+        "name": "Sylveon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
+        "trigger": "Amistad y mov. tipo Hada"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/470.ogg"
+}

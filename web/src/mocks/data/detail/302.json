@@ -1,0 +1,80 @@
+{
+  "id": 302,
+  "name": "Sableye",
+  "types": [
+    {
+      "name": "dark",
+      "label": "Siniestro"
+    },
+    {
+      "name": "ghost",
+      "label": "Fantasma"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png",
+  "speciesColor": "purple",
+  "total": 380,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 3,
+  "category": "Pokémon Oscuridad",
+  "flavorText": "Se alimenta de gemas. En la oscuridad, los ojos le brillan con el destello de las piedras preciosas.",
+  "heightMeters": 0.5,
+  "weightKg": 11,
+  "stats": {
+    "hp": 50,
+    "attack": 75,
+    "defense": 75,
+    "specialAttack": 65,
+    "specialDefense": 65,
+    "speed": 50
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "normal",
+        "label": "Normal"
+      },
+      "multiplier": 0
+    },
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 0
+    },
+    {
+      "type": {
+        "name": "poison",
+        "label": "Veneno"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "psychic",
+        "label": "Psíquico"
+      },
+      "multiplier": 0
+    },
+    {
+      "type": {
+        "name": "fairy",
+        "label": "Hada"
+      },
+      "multiplier": 2
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 302,
+        "name": "Sableye",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png",
+        "trigger": null
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/302.ogg"
+}

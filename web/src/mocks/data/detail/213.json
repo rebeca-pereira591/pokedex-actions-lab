@@ -1,0 +1,80 @@
+{
+  "id": 213,
+  "name": "Shuckle",
+  "types": [
+    {
+      "name": "bug",
+      "label": "Bicho"
+    },
+    {
+      "name": "rock",
+      "label": "Roca"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/213.png",
+  "speciesColor": "yellow",
+  "total": 505,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 2,
+  "category": "Pokémon Moho",
+  "flavorText": "Las bayas que almacena en su caparazón con forma de vasija se convierten al final en un espeso zumo.",
+  "heightMeters": 0.6,
+  "weightKg": 20.5,
+  "stats": {
+    "hp": 20,
+    "attack": 10,
+    "defense": 230,
+    "specialAttack": 10,
+    "specialDefense": 230,
+    "speed": 5
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "normal",
+        "label": "Normal"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "water",
+        "label": "Agua"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "poison",
+        "label": "Veneno"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "rock",
+        "label": "Roca"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "steel",
+        "label": "Acero"
+      },
+      "multiplier": 2
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 213,
+        "name": "Shuckle",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/213.png",
+        "trigger": null
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/213.ogg"
+}

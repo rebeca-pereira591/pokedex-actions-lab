@@ -1,0 +1,133 @@
+{
+  "id": 700,
+  "name": "Sylveon",
+  "types": [
+    {
+      "name": "fairy",
+      "label": "Hada"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
+  "speciesColor": "pink",
+  "total": 525,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 6,
+  "category": "Pokémon Vínculo",
+  "flavorText": "En un cuento infantil de Galar se narra la victoria de un Sylveon de extraordinaria belleza sobre un temible Pokémon de tipo Dragón.",
+  "heightMeters": 1,
+  "weightKg": 23.5,
+  "stats": {
+    "hp": 95,
+    "attack": 65,
+    "defense": 65,
+    "specialAttack": 110,
+    "specialDefense": 130,
+    "speed": 60
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "poison",
+        "label": "Veneno"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "dragon",
+        "label": "Dragón"
+      },
+      "multiplier": 0
+    },
+    {
+      "type": {
+        "name": "dark",
+        "label": "Siniestro"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "steel",
+        "label": "Acero"
+      },
+      "multiplier": 2
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 133,
+        "name": "Eevee",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 134,
+        "name": "Vaporeon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png",
+        "trigger": "Piedra Agua"
+      },
+      {
+        "id": 135,
+        "name": "Jolteon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png",
+        "trigger": "Piedra Trueno"
+      },
+      {
+        "id": 136,
+        "name": "Flareon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png",
+        "trigger": "Piedra Fuego"
+      },
+      {
+        "id": 196,
+        "name": "Espeon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png",
+        "trigger": "Amistad, de día"
+      },
+      {
+        "id": 197,
+        "name": "Umbreon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png",
+        "trigger": "Amistad, de noche"
+      },
+      {
+        "id": 470,
+        "name": "Leafeon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png",
+        "trigger": "Piedra Hoja"
+      },
+      {
+        "id": 471,
+        "name": "Glaceon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png",
+        "trigger": "Piedra Hielo"
+      },
+      {
+        "id": 700,
+        "name": "Sylveon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
+        "trigger": "Amistad y mov. tipo Hada"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/700.ogg"
+}

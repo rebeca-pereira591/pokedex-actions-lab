@@ -1,0 +1,110 @@
+{
+  "id": 444,
+  "name": "Gabite",
+  "types": [
+    {
+      "name": "dragon",
+      "label": "Dragón"
+    },
+    {
+      "name": "ground",
+      "label": "Tierra"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/444.png",
+  "speciesColor": "blue",
+  "total": 410,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 4,
+  "category": "Pokémon Cueva",
+  "flavorText": "Entierra gemas en la cueva que le sirve de nido y hace trizas con sus garras y colmillos a cualquier intruso.",
+  "heightMeters": 1.4,
+  "weightKg": 56,
+  "stats": {
+    "hp": 68,
+    "attack": 90,
+    "defense": 65,
+    "specialAttack": 50,
+    "specialDefense": 55,
+    "speed": 82
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fire",
+        "label": "Fuego"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "electric",
+        "label": "Eléctrico"
+      },
+      "multiplier": 0
+    },
+    {
+      "type": {
+        "name": "ice",
+        "label": "Hielo"
+      },
+      "multiplier": 4
+    },
+    {
+      "type": {
+        "name": "poison",
+        "label": "Veneno"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "rock",
+        "label": "Roca"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "dragon",
+        "label": "Dragón"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "fairy",
+        "label": "Hada"
+      },
+      "multiplier": 2
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 443,
+        "name": "Gible",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/443.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 444,
+        "name": "Gabite",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/444.png",
+        "trigger": "Nv. 24"
+      }
+    ],
+    [
+      {
+        "id": 445,
+        "name": "Garchomp",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png",
+        "trigger": "Nv. 48"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/444.ogg"
+}

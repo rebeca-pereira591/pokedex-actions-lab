@@ -1,0 +1,154 @@
+{
+  "id": 136,
+  "name": "Flareon",
+  "types": [
+    {
+      "name": "fire",
+      "label": "Fuego"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png",
+  "speciesColor": "red",
+  "total": 525,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 1,
+  "category": "Pokémon Llama",
+  "flavorText": "Almacena parte del aire que inhala en la saca de fuego de su interior, que llega a calentarse a más de 1700 °C.",
+  "heightMeters": 0.9,
+  "weightKg": 25,
+  "stats": {
+    "hp": 65,
+    "attack": 130,
+    "defense": 60,
+    "specialAttack": 95,
+    "specialDefense": 110,
+    "speed": 65
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fire",
+        "label": "Fuego"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "water",
+        "label": "Agua"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "grass",
+        "label": "Planta"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "ice",
+        "label": "Hielo"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "ground",
+        "label": "Tierra"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "rock",
+        "label": "Roca"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "steel",
+        "label": "Acero"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "fairy",
+        "label": "Hada"
+      },
+      "multiplier": 0.5
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 133,
+        "name": "Eevee",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 134,
+        "name": "Vaporeon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png",
+        "trigger": "Piedra Agua"
+      },
+      {
+        "id": 135,
+        "name": "Jolteon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png",
+        "trigger": "Piedra Trueno"
+      },
+      {
+        "id": 136,
+        "name": "Flareon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png",
+        "trigger": "Piedra Fuego"
+      },
+      {
+        "id": 196,
+        "name": "Espeon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png",
+        "trigger": "Amistad, de día"
+      },
+      {
+        "id": 197,
+        "name": "Umbreon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png",
+        "trigger": "Amistad, de noche"
+      },
+      {
+        "id": 470,
+        "name": "Leafeon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png",
+        "trigger": "Piedra Hoja"
+      },
+      {
+        "id": 471,
+        "name": "Glaceon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png",
+        "trigger": "Piedra Hielo"
+      },
+      {
+        "id": 700,
+        "name": "Sylveon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
+        "trigger": "Amistad y mov. tipo Hada"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/136.ogg"
+}

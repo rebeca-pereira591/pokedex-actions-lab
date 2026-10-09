@@ -1,0 +1,109 @@
+{
+  "id": 130,
+  "name": "Gyarados",
+  "types": [
+    {
+      "name": "water",
+      "label": "Agua"
+    },
+    {
+      "name": "flying",
+      "label": "Volador"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+  "speciesColor": "blue",
+  "total": 540,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 1,
+  "category": "Pokémon Atrocidad",
+  "flavorText": "Cuando monta en cólera, puede quemarlo todo, incluso en medio de la más violenta tormenta.",
+  "heightMeters": 6.5,
+  "weightKg": 235,
+  "stats": {
+    "hp": 95,
+    "attack": 125,
+    "defense": 79,
+    "specialAttack": 60,
+    "specialDefense": 100,
+    "speed": 81
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fire",
+        "label": "Fuego"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "water",
+        "label": "Agua"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "electric",
+        "label": "Eléctrico"
+      },
+      "multiplier": 4
+    },
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "ground",
+        "label": "Tierra"
+      },
+      "multiplier": 0
+    },
+    {
+      "type": {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "rock",
+        "label": "Roca"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "steel",
+        "label": "Acero"
+      },
+      "multiplier": 0.5
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 129,
+        "name": "Magikarp",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 130,
+        "name": "Gyarados",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+        "trigger": "Nv. 20"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/130.ogg"
+}

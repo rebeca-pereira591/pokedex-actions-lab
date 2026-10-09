@@ -1,0 +1,613 @@
+[
+  {
+    "id": 1,
+    "name": "Bulbasaur",
+    "types": [
+      {
+        "name": "grass",
+        "label": "Planta"
+      },
+      {
+        "name": "poison",
+        "label": "Veneno"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+    "speciesColor": "green",
+    "total": 318,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 2,
+    "name": "Ivysaur",
+    "types": [
+      {
+        "name": "grass",
+        "label": "Planta"
+      },
+      {
+        "name": "poison",
+        "label": "Veneno"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
+    "speciesColor": "green",
+    "total": 405,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 3,
+    "name": "Venusaur",
+    "types": [
+      {
+        "name": "grass",
+        "label": "Planta"
+      },
+      {
+        "name": "poison",
+        "label": "Veneno"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+    "speciesColor": "green",
+    "total": 525,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 4,
+    "name": "Charmander",
+    "types": [
+      {
+        "name": "fire",
+        "label": "Fuego"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+    "speciesColor": "red",
+    "total": 309,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 5,
+    "name": "Charmeleon",
+    "types": [
+      {
+        "name": "fire",
+        "label": "Fuego"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
+    "speciesColor": "red",
+    "total": 405,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 6,
+    "name": "Charizard",
+    "types": [
+      {
+        "name": "fire",
+        "label": "Fuego"
+      },
+      {
+        "name": "flying",
+        "label": "Volador"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+    "speciesColor": "red",
+    "total": 534,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 25,
+    "name": "Pikachu",
+    "types": [
+      {
+        "name": "electric",
+        "label": "Eléctrico"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+    "speciesColor": "yellow",
+    "total": 320,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 26,
+    "name": "Raichu",
+    "types": [
+      {
+        "name": "electric",
+        "label": "Eléctrico"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+    "speciesColor": "yellow",
+    "total": 485,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 92,
+    "name": "Gastly",
+    "types": [
+      {
+        "name": "ghost",
+        "label": "Fantasma"
+      },
+      {
+        "name": "poison",
+        "label": "Veneno"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png",
+    "speciesColor": "purple",
+    "total": 310,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 93,
+    "name": "Haunter",
+    "types": [
+      {
+        "name": "ghost",
+        "label": "Fantasma"
+      },
+      {
+        "name": "poison",
+        "label": "Veneno"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png",
+    "speciesColor": "purple",
+    "total": 405,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 94,
+    "name": "Gengar",
+    "types": [
+      {
+        "name": "ghost",
+        "label": "Fantasma"
+      },
+      {
+        "name": "poison",
+        "label": "Veneno"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png",
+    "speciesColor": "purple",
+    "total": 500,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 113,
+    "name": "Chansey",
+    "types": [
+      {
+        "name": "normal",
+        "label": "Normal"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png",
+    "speciesColor": "pink",
+    "total": 450,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 129,
+    "name": "Magikarp",
+    "types": [
+      {
+        "name": "water",
+        "label": "Agua"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png",
+    "speciesColor": "red",
+    "total": 200,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 130,
+    "name": "Gyarados",
+    "types": [
+      {
+        "name": "water",
+        "label": "Agua"
+      },
+      {
+        "name": "flying",
+        "label": "Volador"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+    "speciesColor": "blue",
+    "total": 540,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 133,
+    "name": "Eevee",
+    "types": [
+      {
+        "name": "normal",
+        "label": "Normal"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
+    "speciesColor": "brown",
+    "total": 325,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 134,
+    "name": "Vaporeon",
+    "types": [
+      {
+        "name": "water",
+        "label": "Agua"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png",
+    "speciesColor": "blue",
+    "total": 525,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 135,
+    "name": "Jolteon",
+    "types": [
+      {
+        "name": "electric",
+        "label": "Eléctrico"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png",
+    "speciesColor": "yellow",
+    "total": 525,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 136,
+    "name": "Flareon",
+    "types": [
+      {
+        "name": "fire",
+        "label": "Fuego"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png",
+    "speciesColor": "red",
+    "total": 525,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 143,
+    "name": "Snorlax",
+    "types": [
+      {
+        "name": "normal",
+        "label": "Normal"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png",
+    "speciesColor": "black",
+    "total": 540,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 150,
+    "name": "Mewtwo",
+    "types": [
+      {
+        "name": "psychic",
+        "label": "Psíquico"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+    "speciesColor": "purple",
+    "total": 680,
+    "isLegendary": true,
+    "isMythical": false
+  },
+  {
+    "id": 151,
+    "name": "Mew",
+    "types": [
+      {
+        "name": "psychic",
+        "label": "Psíquico"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
+    "speciesColor": "pink",
+    "total": 600,
+    "isLegendary": false,
+    "isMythical": true
+  },
+  {
+    "id": 172,
+    "name": "Pichu",
+    "types": [
+      {
+        "name": "electric",
+        "label": "Eléctrico"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png",
+    "speciesColor": "yellow",
+    "total": 205,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 196,
+    "name": "Espeon",
+    "types": [
+      {
+        "name": "psychic",
+        "label": "Psíquico"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png",
+    "speciesColor": "purple",
+    "total": 525,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 197,
+    "name": "Umbreon",
+    "types": [
+      {
+        "name": "dark",
+        "label": "Siniestro"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png",
+    "speciesColor": "black",
+    "total": 525,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 213,
+    "name": "Shuckle",
+    "types": [
+      {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      {
+        "name": "rock",
+        "label": "Roca"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/213.png",
+    "speciesColor": "yellow",
+    "total": 505,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 242,
+    "name": "Blissey",
+    "types": [
+      {
+        "name": "normal",
+        "label": "Normal"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/242.png",
+    "speciesColor": "pink",
+    "total": 540,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 302,
+    "name": "Sableye",
+    "types": [
+      {
+        "name": "dark",
+        "label": "Siniestro"
+      },
+      {
+        "name": "ghost",
+        "label": "Fantasma"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png",
+    "speciesColor": "purple",
+    "total": 380,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 440,
+    "name": "Happiny",
+    "types": [
+      {
+        "name": "normal",
+        "label": "Normal"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/440.png",
+    "speciesColor": "pink",
+    "total": 220,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 443,
+    "name": "Gible",
+    "types": [
+      {
+        "name": "dragon",
+        "label": "Dragón"
+      },
+      {
+        "name": "ground",
+        "label": "Tierra"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/443.png",
+    "speciesColor": "blue",
+    "total": 300,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 444,
+    "name": "Gabite",
+    "types": [
+      {
+        "name": "dragon",
+        "label": "Dragón"
+      },
+      {
+        "name": "ground",
+        "label": "Tierra"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/444.png",
+    "speciesColor": "blue",
+    "total": 410,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 445,
+    "name": "Garchomp",
+    "types": [
+      {
+        "name": "dragon",
+        "label": "Dragón"
+      },
+      {
+        "name": "ground",
+        "label": "Tierra"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png",
+    "speciesColor": "blue",
+    "total": 600,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 446,
+    "name": "Munchlax",
+    "types": [
+      {
+        "name": "normal",
+        "label": "Normal"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/446.png",
+    "speciesColor": "black",
+    "total": 390,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 447,
+    "name": "Riolu",
+    "types": [
+      {
+        "name": "fighting",
+        "label": "Lucha"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png",
+    "speciesColor": "blue",
+    "total": 285,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 448,
+    "name": "Lucario",
+    "types": [
+      {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      {
+        "name": "steel",
+        "label": "Acero"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
+    "speciesColor": "blue",
+    "total": 525,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 470,
+    "name": "Leafeon",
+    "types": [
+      {
+        "name": "grass",
+        "label": "Planta"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png",
+    "speciesColor": "green",
+    "total": 525,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 471,
+    "name": "Glaceon",
+    "types": [
+      {
+        "name": "ice",
+        "label": "Hielo"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png",
+    "speciesColor": "blue",
+    "total": 525,
+    "isLegendary": false,
+    "isMythical": false
+  },
+  {
+    "id": 700,
+    "name": "Sylveon",
+    "types": [
+      {
+        "name": "fairy",
+        "label": "Hada"
+      }
+    ],
+    "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
+    "speciesColor": "pink",
+    "total": 525,
+    "isLegendary": false,
+    "isMythical": false
+  }
+]

@@ -1,0 +1,83 @@
+.chain {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.mon {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  min-width: 0;
+  padding: 6px;
+  border-radius: 10px;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.mon:hover {
+  background: var(--surface-2);
+}
+
+.mon img {
+  width: 64px;
+  height: 64px;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.trigger {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.current {
+  background: color-mix(in oklab, var(--t) 22%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--t) 50%, var(--line));
+}
+
+.arrow {
+  display: grid;
+  justify-items: center;
+  max-width: 84px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.arrow::before {
+  content: "→";
+  font-size: 18px;
+  color: var(--fg);
+}
+
+.branches {
+  flex: 1 1 260px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.branches .mon {
+  font-size: 12px;
+}
+
+.branches .mon img {
+  width: 48px;
+  height: 48px;
+}
+
+.none {
+  color: var(--muted);
+}

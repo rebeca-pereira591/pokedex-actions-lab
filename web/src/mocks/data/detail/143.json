@@ -1,0 +1,63 @@
+{
+  "id": 143,
+  "name": "Snorlax",
+  "types": [
+    {
+      "name": "normal",
+      "label": "Normal"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png",
+  "speciesColor": "black",
+  "total": 540,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 1,
+  "category": "Pokémon Dormir",
+  "flavorText": "Este Pokémon tiene un estómago a prueba de bomba, por lo que es capaz de ingerir incluso comida podrida o mohosa.",
+  "heightMeters": 2.1,
+  "weightKg": 460,
+  "stats": {
+    "hp": 160,
+    "attack": 110,
+    "defense": 65,
+    "specialAttack": 65,
+    "specialDefense": 110,
+    "speed": 30
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "ghost",
+        "label": "Fantasma"
+      },
+      "multiplier": 0
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 446,
+        "name": "Munchlax",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/446.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 143,
+        "name": "Snorlax",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png",
+        "trigger": "Amistad"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/143.ogg"
+}

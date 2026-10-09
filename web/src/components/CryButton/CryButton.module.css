@@ -1,0 +1,60 @@
+/* Botón sólido que brilla con el color del Pokémon (--t). Dentro de un especial (.legendary o
+   .mythical, en la ficha) toma el tono del metal: ver DetailPage. */
+.cry {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in oklab, var(--t) 60%, #fff);
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--t) 75%, #fff),
+    var(--t) 55%,
+    color-mix(in oklab, var(--t) 80%, #000)
+  );
+  color: var(--on);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 0 26px -4px var(--t);
+  cursor: pointer;
+}
+
+.cry:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 0 36px -2px var(--t);
+}
+
+/* el triángulo de "play" */
+.cry::before {
+  content: "";
+  border-left: 8px solid currentColor;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+:global(.legendary) .cry {
+  color: var(--legend-1);
+  background: linear-gradient(180deg, #4a2f08, var(--legend-ink));
+  border-color: var(--legend-ink);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 224, 138, 0.35),
+    0 8px 20px -10px rgba(0, 0, 0, 0.8);
+}
+
+:global(.mythical) .cry {
+  color: var(--myth-1);
+  background: linear-gradient(180deg, #4a1866, var(--myth-ink));
+  border-color: var(--myth-ink);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 199, 238, 0.35),
+    0 8px 20px -10px rgba(0, 0, 0, 0.8);
+}

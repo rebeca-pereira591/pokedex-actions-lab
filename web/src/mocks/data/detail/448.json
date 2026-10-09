@@ -1,0 +1,137 @@
+{
+  "id": 448,
+  "name": "Lucario",
+  "types": [
+    {
+      "name": "fighting",
+      "label": "Lucha"
+    },
+    {
+      "name": "steel",
+      "label": "Acero"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
+  "speciesColor": "blue",
+  "total": 525,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 4,
+  "category": "Pokémon Aura",
+  "flavorText": "Puede leer los pensamientos de la gente, por lo que establece lazos afectivos únicamente con Entrenadores de corazón noble.",
+  "heightMeters": 1.2,
+  "weightKg": 54,
+  "stats": {
+    "hp": 70,
+    "attack": 110,
+    "defense": 70,
+    "specialAttack": 115,
+    "specialDefense": 70,
+    "speed": 90
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "normal",
+        "label": "Normal"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "fire",
+        "label": "Fuego"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "grass",
+        "label": "Planta"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "ice",
+        "label": "Hielo"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "poison",
+        "label": "Veneno"
+      },
+      "multiplier": 0
+    },
+    {
+      "type": {
+        "name": "ground",
+        "label": "Tierra"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      "multiplier": 0.25
+    },
+    {
+      "type": {
+        "name": "rock",
+        "label": "Roca"
+      },
+      "multiplier": 0.25
+    },
+    {
+      "type": {
+        "name": "dragon",
+        "label": "Dragón"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "dark",
+        "label": "Siniestro"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "steel",
+        "label": "Acero"
+      },
+      "multiplier": 0.5
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 447,
+        "name": "Riolu",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 448,
+        "name": "Lucario",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
+        "trigger": "Amistad, de día"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/448.ogg"
+}

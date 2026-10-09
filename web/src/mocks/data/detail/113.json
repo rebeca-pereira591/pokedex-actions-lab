@@ -1,0 +1,71 @@
+{
+  "id": 113,
+  "name": "Chansey",
+  "types": [
+    {
+      "name": "normal",
+      "label": "Normal"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png",
+  "speciesColor": "pink",
+  "total": 450,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 1,
+  "category": "Pokémon Huevo",
+  "flavorText": "Este Pokémon solía ser lento de reflejos, pero ha desarrollado una gran velocidad para evitar que le roben sus preciados huevos.",
+  "heightMeters": 1.1,
+  "weightKg": 34.6,
+  "stats": {
+    "hp": 250,
+    "attack": 5,
+    "defense": 5,
+    "specialAttack": 35,
+    "specialDefense": 105,
+    "speed": 50
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "ghost",
+        "label": "Fantasma"
+      },
+      "multiplier": 0
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 440,
+        "name": "Happiny",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/440.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 113,
+        "name": "Chansey",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png",
+        "trigger": "Con Piedra Oval, de día"
+      }
+    ],
+    [
+      {
+        "id": 242,
+        "name": "Blissey",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/242.png",
+        "trigger": "Amistad"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/113.ogg"
+}

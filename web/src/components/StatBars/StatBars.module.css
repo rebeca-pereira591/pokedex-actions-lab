@@ -1,0 +1,48 @@
+.bars {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 82px 34px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.row dd {
+  margin: 0;
+}
+
+.value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.track {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.track i {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: color-mix(in oklab, var(--t) 80%, var(--fg));
+}
+
+.total {
+  border-top: 1px solid var(--line);
+  padding-top: 6px;
+  margin-top: 2px;
+}
+
+.total .value {
+  font-size: 16px;
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "normal",
+    "label": "Normal"
+  },
+  {
+    "name": "fire",
+    "label": "Fuego"
+  },
+  {
+    "name": "water",
+    "label": "Agua"
+  },
+  {
+    "name": "electric",
+    "label": "Eléctrico"
+  },
+  {
+    "name": "grass",
+    "label": "Planta"
+  },
+  {
+    "name": "ice",
+    "label": "Hielo"
+  },
+  {
+    "name": "fighting",
+    "label": "Lucha"
+  },
+  {
+    "name": "poison",
+    "label": "Veneno"
+  },
+  {
+    "name": "ground",
+    "label": "Tierra"
+  },
+  {
+    "name": "flying",
+    "label": "Volador"
+  },
+  {
+    "name": "psychic",
+    "label": "Psíquico"
+  },
+  {
+    "name": "bug",
+    "label": "Bicho"
+  },
+  {
+    "name": "rock",
+    "label": "Roca"
+  },
+  {
+    "name": "ghost",
+    "label": "Fantasma"
+  },
+  {
+    "name": "dragon",
+    "label": "Dragón"
+  },
+  {
+    "name": "dark",
+    "label": "Siniestro"
+  },
+  {
+    "name": "steel",
+    "label": "Acero"
+  },
+  {
+    "name": "fairy",
+    "label": "Hada"
+  }
+]

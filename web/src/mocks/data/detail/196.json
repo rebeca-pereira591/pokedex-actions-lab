@@ -1,0 +1,126 @@
+{
+  "id": 196,
+  "name": "Espeon",
+  "types": [
+    {
+      "name": "psychic",
+      "label": "Psíquico"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png",
+  "speciesColor": "purple",
+  "total": 525,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 2,
+  "category": "Pokémon Sol",
+  "flavorText": "Lucha con los poderes psíquicos que brotan de la esfera de su frente, que se oscurece cuando su energía disminuye.",
+  "heightMeters": 0.9,
+  "weightKg": 26.5,
+  "stats": {
+    "hp": 65,
+    "attack": 65,
+    "defense": 60,
+    "specialAttack": 130,
+    "specialDefense": 95,
+    "speed": 110
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "psychic",
+        "label": "Psíquico"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "ghost",
+        "label": "Fantasma"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "dark",
+        "label": "Siniestro"
+      },
+      "multiplier": 2
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 133,
+        "name": "Eevee",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 134,
+        "name": "Vaporeon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png",
+        "trigger": "Piedra Agua"
+      },
+      {
+        "id": 135,
+        "name": "Jolteon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png",
+        "trigger": "Piedra Trueno"
+      },
+      {
+        "id": 136,
+        "name": "Flareon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png",
+        "trigger": "Piedra Fuego"
+      },
+      {
+        "id": 196,
+        "name": "Espeon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png",
+        "trigger": "Amistad, de día"
+      },
+      {
+        "id": 197,
+        "name": "Umbreon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png",
+        "trigger": "Amistad, de noche"
+      },
+      {
+        "id": 470,
+        "name": "Leafeon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png",
+        "trigger": "Piedra Hoja"
+      },
+      {
+        "id": 471,
+        "name": "Glaceon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png",
+        "trigger": "Piedra Hielo"
+      },
+      {
+        "id": 700,
+        "name": "Sylveon",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
+        "trigger": "Amistad y mov. tipo Hada"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/196.ogg"
+}

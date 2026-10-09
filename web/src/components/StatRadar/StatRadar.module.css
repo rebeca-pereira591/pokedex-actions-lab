@@ -1,0 +1,37 @@
+.radar {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin-inline: auto;
+}
+
+.ring {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.shape {
+  fill: color-mix(in oklab, var(--t) 45%, transparent);
+  stroke: color-mix(in oklab, var(--t) 75%, var(--fg));
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+
+.dot {
+  fill: color-mix(in oklab, var(--t) 75%, var(--fg));
+}
+
+.label {
+  font-family: var(--font-display);
+  font-size: 12px;
+  fill: var(--muted);
+}
+
+.value {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  fill: var(--fg);
+}

@@ -1,0 +1,91 @@
+{
+  "id": 129,
+  "name": "Magikarp",
+  "types": [
+    {
+      "name": "water",
+      "label": "Agua"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png",
+  "speciesColor": "red",
+  "total": 200,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 1,
+  "category": "Pokémon Pez",
+  "flavorText": "Este Pokémon débil y patético se limita a dejarse llevar por la corriente cuando esta tiene fuerza.",
+  "heightMeters": 0.9,
+  "weightKg": 10,
+  "stats": {
+    "hp": 20,
+    "attack": 10,
+    "defense": 55,
+    "specialAttack": 15,
+    "specialDefense": 20,
+    "speed": 80
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fire",
+        "label": "Fuego"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "water",
+        "label": "Agua"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "electric",
+        "label": "Eléctrico"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "grass",
+        "label": "Planta"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "ice",
+        "label": "Hielo"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "steel",
+        "label": "Acero"
+      },
+      "multiplier": 0.5
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 129,
+        "name": "Magikarp",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 130,
+        "name": "Gyarados",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+        "trigger": "Nv. 20"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/129.ogg"
+}

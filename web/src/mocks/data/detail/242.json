@@ -1,0 +1,71 @@
+{
+  "id": 242,
+  "name": "Blissey",
+  "types": [
+    {
+      "name": "normal",
+      "label": "Normal"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/242.png",
+  "speciesColor": "pink",
+  "total": 540,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 2,
+  "category": "Pokémon Felicidad",
+  "flavorText": "Pone unos extraños huevos llenos de felicidad. Dicen que aquellos que los prueban se vuelven amables con todo el mundo.",
+  "heightMeters": 1.5,
+  "weightKg": 46.8,
+  "stats": {
+    "hp": 255,
+    "attack": 10,
+    "defense": 10,
+    "specialAttack": 75,
+    "specialDefense": 135,
+    "speed": 55
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "ghost",
+        "label": "Fantasma"
+      },
+      "multiplier": 0
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 440,
+        "name": "Happiny",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/440.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 113,
+        "name": "Chansey",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png",
+        "trigger": "Con Piedra Oval, de día"
+      }
+    ],
+    [
+      {
+        "id": 242,
+        "name": "Blissey",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/242.png",
+        "trigger": "Amistad"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/242.ogg"
+}

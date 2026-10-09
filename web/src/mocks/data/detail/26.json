@@ -1,0 +1,85 @@
+{
+  "id": 26,
+  "name": "Raichu",
+  "types": [
+    {
+      "name": "electric",
+      "label": "Eléctrico"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+  "speciesColor": "yellow",
+  "total": 485,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 1,
+  "category": "Pokémon Ratón",
+  "flavorText": "Cuando ha descargado las bolsas de las mejillas, levanta la cola y absorbe la carga eléctrica que hay en el ambiente.",
+  "heightMeters": 0.8,
+  "weightKg": 30,
+  "stats": {
+    "hp": 60,
+    "attack": 90,
+    "defense": 55,
+    "specialAttack": 90,
+    "specialDefense": 80,
+    "speed": 110
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "electric",
+        "label": "Eléctrico"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "ground",
+        "label": "Tierra"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "flying",
+        "label": "Volador"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "steel",
+        "label": "Acero"
+      },
+      "multiplier": 0.5
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 172,
+        "name": "Pichu",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 25,
+        "name": "Pikachu",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "trigger": "Amistad"
+      }
+    ],
+    [
+      {
+        "id": 26,
+        "name": "Raichu",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "trigger": "Piedra Trueno"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/26.ogg"
+}

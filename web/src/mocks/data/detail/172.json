@@ -1,0 +1,85 @@
+{
+  "id": 172,
+  "name": "Pichu",
+  "types": [
+    {
+      "name": "electric",
+      "label": "Eléctrico"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png",
+  "speciesColor": "yellow",
+  "total": 205,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 2,
+  "category": "Pokémon Ratoncito",
+  "flavorText": "Las bolsas de electricidad de sus mejillas son muy pequeñas y, a poco que se desborden, recibe una fuerte descarga.",
+  "heightMeters": 0.3,
+  "weightKg": 2,
+  "stats": {
+    "hp": 20,
+    "attack": 40,
+    "defense": 15,
+    "specialAttack": 35,
+    "specialDefense": 35,
+    "speed": 60
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "electric",
+        "label": "Eléctrico"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "ground",
+        "label": "Tierra"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "flying",
+        "label": "Volador"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "steel",
+        "label": "Acero"
+      },
+      "multiplier": 0.5
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 172,
+        "name": "Pichu",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 25,
+        "name": "Pikachu",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "trigger": "Amistad"
+      }
+    ],
+    [
+      {
+        "id": 26,
+        "name": "Raichu",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "trigger": "Piedra Trueno"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/172.ogg"
+}

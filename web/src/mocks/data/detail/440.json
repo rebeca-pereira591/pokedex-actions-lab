@@ -1,0 +1,71 @@
+{
+  "id": 440,
+  "name": "Happiny",
+  "types": [
+    {
+      "name": "normal",
+      "label": "Normal"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/440.png",
+  "speciesColor": "pink",
+  "total": 220,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 4,
+  "category": "Pokémon Casita",
+  "flavorText": "Les deja su preciada roca redonda a aquellos con los que se lleva bien. Si no se la devuelven, se echa a llorar, presa de una rabieta.",
+  "heightMeters": 0.6,
+  "weightKg": 24.4,
+  "stats": {
+    "hp": 100,
+    "attack": 5,
+    "defense": 5,
+    "specialAttack": 15,
+    "specialDefense": 65,
+    "speed": 30
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "ghost",
+        "label": "Fantasma"
+      },
+      "multiplier": 0
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 440,
+        "name": "Happiny",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/440.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 113,
+        "name": "Chansey",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png",
+        "trigger": "Con Piedra Oval, de día"
+      }
+    ],
+    [
+      {
+        "id": 242,
+        "name": "Blissey",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/242.png",
+        "trigger": "Amistad"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/440.ogg"
+}

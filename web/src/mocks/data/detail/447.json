@@ -1,0 +1,91 @@
+{
+  "id": 447,
+  "name": "Riolu",
+  "types": [
+    {
+      "name": "fighting",
+      "label": "Lucha"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png",
+  "speciesColor": "blue",
+  "total": 285,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 4,
+  "category": "Pokémon Emanación",
+  "flavorText": "Percibe los sentimientos de quienes lo rodean, así como las condiciones del entorno, mediante unas ondas conocidas como auras.",
+  "heightMeters": 0.7,
+  "weightKg": 20.2,
+  "stats": {
+    "hp": 40,
+    "attack": 70,
+    "defense": 40,
+    "specialAttack": 35,
+    "specialDefense": 40,
+    "speed": 60
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "flying",
+        "label": "Volador"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "psychic",
+        "label": "Psíquico"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "rock",
+        "label": "Roca"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "dark",
+        "label": "Siniestro"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "fairy",
+        "label": "Hada"
+      },
+      "multiplier": 2
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 447,
+        "name": "Riolu",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 448,
+        "name": "Lucario",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
+        "trigger": "Amistad, de día"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/447.ogg"
+}

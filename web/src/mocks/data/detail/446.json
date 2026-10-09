@@ -1,0 +1,63 @@
+{
+  "id": 446,
+  "name": "Munchlax",
+  "types": [
+    {
+      "name": "normal",
+      "label": "Normal"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/446.png",
+  "speciesColor": "black",
+  "total": 390,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 4,
+  "category": "Pokémon Comilón",
+  "flavorText": "Guarda alimentos bajo el pelaje. Compartirá un pequeño bocado de vez en cuando con quien logre ganarse su confianza.",
+  "heightMeters": 0.6,
+  "weightKg": 105,
+  "stats": {
+    "hp": 135,
+    "attack": 85,
+    "defense": 40,
+    "specialAttack": 40,
+    "specialDefense": 85,
+    "speed": 5
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "ghost",
+        "label": "Fantasma"
+      },
+      "multiplier": 0
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 446,
+        "name": "Munchlax",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/446.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 143,
+        "name": "Snorlax",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png",
+        "trigger": "Amistad"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/446.ogg"
+}

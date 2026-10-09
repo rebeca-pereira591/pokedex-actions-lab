@@ -1,0 +1,45 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.badge {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 4px;
+  text-align: center;
+}
+
+.badge::before {
+  content: "";
+  width: 30px;
+  height: 34px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background: radial-gradient(
+    circle at 50% 35%,
+    color-mix(in oklab, var(--t) 60%, #fff),
+    var(--t) 60%,
+    color-mix(in oklab, var(--t) 60%, #000)
+  );
+  filter: drop-shadow(0 0 8px var(--t));
+}
+
+.label {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.value {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,110 @@
+{
+  "id": 445,
+  "name": "Garchomp",
+  "types": [
+    {
+      "name": "dragon",
+      "label": "Dragón"
+    },
+    {
+      "name": "ground",
+      "label": "Tierra"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png",
+  "speciesColor": "blue",
+  "total": 600,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 4,
+  "category": "Pokémon Mach",
+  "flavorText": "Se mueve a gran velocidad incluso por tierra. Es capaz de cazar una presa en una montaña nevada y volver a su guarida sin llegar a pasar frío.",
+  "heightMeters": 1.9,
+  "weightKg": 95,
+  "stats": {
+    "hp": 108,
+    "attack": 130,
+    "defense": 95,
+    "specialAttack": 80,
+    "specialDefense": 85,
+    "speed": 102
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fire",
+        "label": "Fuego"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "electric",
+        "label": "Eléctrico"
+      },
+      "multiplier": 0
+    },
+    {
+      "type": {
+        "name": "ice",
+        "label": "Hielo"
+      },
+      "multiplier": 4
+    },
+    {
+      "type": {
+        "name": "poison",
+        "label": "Veneno"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "rock",
+        "label": "Roca"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "dragon",
+        "label": "Dragón"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "fairy",
+        "label": "Hada"
+      },
+      "multiplier": 2
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 443,
+        "name": "Gible",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/443.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 444,
+        "name": "Gabite",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/444.png",
+        "trigger": "Nv. 24"
+      }
+    ],
+    [
+      {
+        "id": 445,
+        "name": "Garchomp",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png",
+        "trigger": "Nv. 48"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/445.ogg"
+}

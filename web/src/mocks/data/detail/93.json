@@ -1,0 +1,131 @@
+{
+  "id": 93,
+  "name": "Haunter",
+  "types": [
+    {
+      "name": "ghost",
+      "label": "Fantasma"
+    },
+    {
+      "name": "poison",
+      "label": "Veneno"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png",
+  "speciesColor": "purple",
+  "total": 405,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 1,
+  "category": "Pokémon Gas",
+  "flavorText": "Cuando se tiene la sensación de ser observado en la oscuridad sin que haya nadie alrededor, seguro que es porque un Haunter anda cerca.",
+  "heightMeters": 1.6,
+  "weightKg": 0.1,
+  "stats": {
+    "hp": 45,
+    "attack": 50,
+    "defense": 45,
+    "specialAttack": 115,
+    "specialDefense": 55,
+    "speed": 95
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "normal",
+        "label": "Normal"
+      },
+      "multiplier": 0
+    },
+    {
+      "type": {
+        "name": "grass",
+        "label": "Planta"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 0
+    },
+    {
+      "type": {
+        "name": "poison",
+        "label": "Veneno"
+      },
+      "multiplier": 0.25
+    },
+    {
+      "type": {
+        "name": "ground",
+        "label": "Tierra"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "psychic",
+        "label": "Psíquico"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      "multiplier": 0.25
+    },
+    {
+      "type": {
+        "name": "ghost",
+        "label": "Fantasma"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "dark",
+        "label": "Siniestro"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "fairy",
+        "label": "Hada"
+      },
+      "multiplier": 0.5
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 92,
+        "name": "Gastly",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 93,
+        "name": "Haunter",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png",
+        "trigger": "Nv. 25"
+      }
+    ],
+    [
+      {
+        "id": 94,
+        "name": "Gengar",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png",
+        "trigger": "Intercambio"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/93.ogg"
+}

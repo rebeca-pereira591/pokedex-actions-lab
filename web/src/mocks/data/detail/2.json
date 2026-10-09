@@ -1,0 +1,124 @@
+{
+  "id": 2,
+  "name": "Ivysaur",
+  "types": [
+    {
+      "name": "grass",
+      "label": "Planta"
+    },
+    {
+      "name": "poison",
+      "label": "Veneno"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
+  "speciesColor": "green",
+  "total": 405,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 1,
+  "category": "Pokémon Semilla",
+  "flavorText": "La luz del sol lo fortalece y hace que le crezca el capullo que tiene en el lomo.",
+  "heightMeters": 1,
+  "weightKg": 13,
+  "stats": {
+    "hp": 60,
+    "attack": 62,
+    "defense": 63,
+    "specialAttack": 80,
+    "specialDefense": 80,
+    "speed": 60
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fire",
+        "label": "Fuego"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "water",
+        "label": "Agua"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "electric",
+        "label": "Eléctrico"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "grass",
+        "label": "Planta"
+      },
+      "multiplier": 0.25
+    },
+    {
+      "type": {
+        "name": "ice",
+        "label": "Hielo"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "flying",
+        "label": "Volador"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "psychic",
+        "label": "Psíquico"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "fairy",
+        "label": "Hada"
+      },
+      "multiplier": 0.5
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 1,
+        "name": "Bulbasaur",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 2,
+        "name": "Ivysaur",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
+        "trigger": "Nv. 16"
+      }
+    ],
+    [
+      {
+        "id": 3,
+        "name": "Venusaur",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+        "trigger": "Nv. 32"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/2.ogg"
+}

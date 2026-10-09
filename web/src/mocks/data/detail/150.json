@@ -1,0 +1,76 @@
+{
+  "id": 150,
+  "name": "Mewtwo",
+  "types": [
+    {
+      "name": "psychic",
+      "label": "Psíquico"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+  "speciesColor": "purple",
+  "total": 680,
+  "isLegendary": true,
+  "isMythical": false,
+  "generation": 1,
+  "category": "Pokémon Genético",
+  "flavorText": "Su ADN es casi el mismo que el de Mew. Sin embargo, su tamaño y carácter son muy diferentes.",
+  "heightMeters": 2,
+  "weightKg": 122,
+  "stats": {
+    "hp": 106,
+    "attack": 110,
+    "defense": 90,
+    "specialAttack": 154,
+    "specialDefense": 90,
+    "speed": 130
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "fighting",
+        "label": "Lucha"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "psychic",
+        "label": "Psíquico"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "bug",
+        "label": "Bicho"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "ghost",
+        "label": "Fantasma"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "dark",
+        "label": "Siniestro"
+      },
+      "multiplier": 2
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 150,
+        "name": "Mewtwo",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+        "trigger": null
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/150.ogg"
+}

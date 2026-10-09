@@ -1,0 +1,43 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px 3px 7px;
+  border: 0;
+  border-radius: 5px;
+  background: var(--t);
+  color: var(--on);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+/* el rombo antes del nombre */
+.chip::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  background: currentColor;
+  opacity: 0.55;
+}
+
+button.chip {
+  cursor: pointer;
+}
+
+.dimmed {
+  opacity: 0.45;
+}
+
+.pressed {
+  opacity: 1;
+  box-shadow:
+    0 0 0 2px var(--bg),
+    0 0 0 4px var(--t),
+    0 0 14px var(--t);
+}

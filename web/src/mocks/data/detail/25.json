@@ -1,0 +1,85 @@
+{
+  "id": 25,
+  "name": "Pikachu",
+  "types": [
+    {
+      "name": "electric",
+      "label": "Eléctrico"
+    }
+  ],
+  "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+  "speciesColor": "yellow",
+  "total": 320,
+  "isLegendary": false,
+  "isMythical": false,
+  "generation": 1,
+  "category": "Pokémon Ratón",
+  "flavorText": "Los miembros de esta especie se saludan entre sí uniendo sus colas y transmitiéndose corriente eléctrica.",
+  "heightMeters": 0.4,
+  "weightKg": 6,
+  "stats": {
+    "hp": 35,
+    "attack": 55,
+    "defense": 40,
+    "specialAttack": 50,
+    "specialDefense": 50,
+    "speed": 90
+  },
+  "weaknesses": [
+    {
+      "type": {
+        "name": "electric",
+        "label": "Eléctrico"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "ground",
+        "label": "Tierra"
+      },
+      "multiplier": 2
+    },
+    {
+      "type": {
+        "name": "flying",
+        "label": "Volador"
+      },
+      "multiplier": 0.5
+    },
+    {
+      "type": {
+        "name": "steel",
+        "label": "Acero"
+      },
+      "multiplier": 0.5
+    }
+  ],
+  "evolution": [
+    [
+      {
+        "id": 172,
+        "name": "Pichu",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png",
+        "trigger": null
+      }
+    ],
+    [
+      {
+        "id": 25,
+        "name": "Pikachu",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "trigger": "Amistad"
+      }
+    ],
+    [
+      {
+        "id": 26,
+        "name": "Raichu",
+        "artworkUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "trigger": "Piedra Trueno"
+      }
+    ]
+  ],
+  "cryUrl": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/25.ogg"
+}

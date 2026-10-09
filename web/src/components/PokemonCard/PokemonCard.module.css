@@ -1,0 +1,285 @@
+/* Superficie casi negra con borde de luz. El Pokémon se sale por arriba y su color (--t) la ilumina. */
+.card {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  padding: 0 14px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--panel-edge);
+  background:
+    linear-gradient(180deg, var(--panel-top) 0%, var(--panel-mid) 38%, rgba(0, 0, 0, 0.3) 100%),
+    var(--panel-base);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    0 26px 50px -28px rgba(0, 0, 0, 0.95);
+  color: var(--fg);
+  text-align: center;
+  text-decoration: none;
+}
+
+/* luz del color del Pokémon sobre la parte de arriba */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(
+    80% 45% at 50% 0%,
+    color-mix(in oklab, var(--t) 28%, transparent),
+    transparent 75%
+  );
+}
+
+/* El hover no anima colores (la interpolación inventaba tonos): el borde cambia de golpe y el halo
+   extra sólo sube de opacidad. */
+.card:hover {
+  border-color: color-mix(in oklab, var(--t) 60%, rgba(255, 255, 255, 0.3));
+}
+
+.card[aria-current="true"] {
+  border-color: color-mix(in oklab, var(--t) 80%, #fff);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 0 0 1px color-mix(in oklab, var(--t) 60%, transparent),
+    0 0 34px -6px var(--t),
+    0 26px 50px -28px rgba(0, 0, 0, 0.95);
+}
+
+.art {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  width: 92%;
+  max-width: 100%;
+  aspect-ratio: 1;
+  margin-top: -34px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 55%,
+    color-mix(in oklab, var(--t) 60%, transparent) 0,
+    color-mix(in oklab, var(--t) 18%, transparent) 36%,
+    transparent 66%
+  );
+}
+
+.art::before {
+  content: "";
+  position: absolute;
+  inset: 6%;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--t) 0, transparent 66%);
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.card:hover .art::before {
+  opacity: 0.6;
+}
+
+.art img {
+  width: 92%;
+  height: auto;
+  filter: drop-shadow(0 0 14px color-mix(in oklab, var(--t) 70%, transparent))
+    drop-shadow(0 14px 14px rgba(0, 0, 0, 0.6));
+  transition: transform 0.25s ease;
+}
+
+.card:hover .art img {
+  transform: translateY(-6px) scale(1.06);
+}
+
+.number {
+  margin-top: -4px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.name {
+  font-family: var(--font-title);
+  font-size: 23px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.foot {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.foot b {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: var(--fg);
+}
+
+.hex {
+  flex: none;
+  width: 14px;
+  height: 16px;
+  background: var(--t);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.flag {
+  margin-top: 2px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+/* Especiales: metal pulido sólido, con borde de luz que gira. */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  to {
+    --angle: 360deg;
+  }
+}
+
+.legendary,
+.mythical {
+  border-color: transparent;
+}
+
+.legendary::after,
+.mythical::after {
+  display: none;
+}
+
+.legendary::before,
+.mythical::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  padding: 1.5px;
+  border-radius: inherit;
+  pointer-events: none;
+  background: conic-gradient(
+    from var(--angle),
+    var(--edge-a),
+    var(--edge-b),
+    var(--edge-c),
+    var(--edge-a),
+    var(--edge-b),
+    var(--edge-c),
+    var(--edge-a)
+  );
+  mask:
+    linear-gradient(#000 0 0) content-box exclude,
+    linear-gradient(#000 0 0);
+  animation: spin 6s linear infinite;
+}
+
+.legendary .art,
+.mythical .art {
+  background: radial-gradient(circle at 50% 58%, rgba(255, 255, 255, 0.45) 0 30%, transparent 66%);
+}
+
+.legendary .name,
+.mythical .name {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+.legendary {
+  --fg: var(--legend-ink);
+  --muted: var(--legend-ink-muted);
+  --edge-a: #fffbea;
+  --edge-b: var(--legend-2);
+  --edge-c: #7a4a08;
+  background:
+    radial-gradient(70% 45% at 50% 42%, rgba(255, 250, 225, 0.75), transparent 70%),
+    linear-gradient(
+      145deg,
+      var(--legend-1) 0%,
+      #f7cf5e 16%,
+      var(--legend-3) 38%,
+      #fbe7a6 56%,
+      #a86a12 78%,
+      var(--legend-2) 100%
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.85),
+    inset 0 -2px 0 rgba(90, 50, 0, 0.45),
+    0 0 34px -6px var(--legend-2),
+    0 18px 40px -22px rgba(0, 0, 0, 0.9);
+}
+
+.legendary .flag {
+  background: var(--legend-ink);
+  color: var(--legend-1);
+}
+
+.legendary .hex {
+  background: var(--legend-ink);
+}
+
+.mythical {
+  --fg: var(--myth-ink);
+  --muted: var(--myth-ink-muted);
+  --edge-a: #fff0fa;
+  --edge-b: var(--myth-2);
+  --edge-c: #4a1270;
+  background:
+    radial-gradient(70% 45% at 50% 42%, rgba(255, 236, 250, 0.75), transparent 70%),
+    linear-gradient(
+      145deg,
+      var(--myth-1) 0%,
+      var(--myth-2) 16%,
+      var(--myth-3) 38%,
+      #f7c2ec 56%,
+      var(--myth-4) 78%,
+      #c35bd6 100%
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.85),
+    inset 0 -2px 0 rgba(60, 10, 80, 0.45),
+    0 0 34px -6px var(--myth-2),
+    0 18px 40px -22px rgba(0, 0, 0, 0.9);
+}
+
+.mythical .flag {
+  background: var(--myth-ink);
+  color: var(--myth-1);
+}
+
+.mythical .hex {
+  background: var(--myth-ink);
+}
