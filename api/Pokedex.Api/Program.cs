@@ -1,6 +1,8 @@
 using Microsoft.Extensions.Caching.Hybrid;
 using Microsoft.Extensions.Options;
+using Pokedex.Api.Contracts;
 using Pokedex.Api.PokeApi;
+using Pokedex.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,6 +38,8 @@ builder.Services
         return new FixtureMessageHandler(root);
     });
 
+builder.Services.AddScoped<PokedexService>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -43,9 +47,37 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-app.MapGet("/api/health", () => Results.Ok(new { status = "ok" }));
+var api = app.MapGroup("/api");
+
+api.MapGet("/health", () => Results.Ok(new { status = "ok" }));
+
+api.MapGet("/pokemon", ([AsParameters] PokemonQuery query, PokedexService pokedex, CancellationToken ct) =>
+    Handle(() => pokedex.GetPageAsync(query, ct)));
+
+api.MapGet("/pokemon/{idOrName}", (string idOrName, PokedexService pokedex, CancellationToken ct) =>
+    Handle(() => pokedex.GetDetailAsync(idOrName, ct)));
+
+api.MapGet("/types", () => Results.Ok(PokedexService.GetTypes()));
 
 app.Run();
+
+// Traduce los errores esperables a respuestas HTTP: un filtro inválido es 400 y un Pokémon que no
+// existe es 404. Cualquier otro error sigue siendo 500.
+static async Task<IResult> Handle<T>(Func<Task<T>> action)
+{
+    try
+    {
+        return Results.Ok(await action());
+    }
+    catch (InvalidQueryException e)
+    {
+        return Results.Problem(e.Message, statusCode: StatusCodes.Status400BadRequest);
+    }
+    catch (PokeApiNotFoundException)
+    {
+        return Results.Problem("No existe ese Pokémon.", statusCode: StatusCodes.Status404NotFound);
+    }
+}
 
 // Expuesto para que los tests de integración puedan usar WebApplicationFactory<Program>.
 public partial class Program;
