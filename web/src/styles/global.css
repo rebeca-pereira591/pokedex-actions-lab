@@ -29,7 +29,7 @@ body::before {
   pointer-events: none;
   background:
     radial-gradient(
-      50% 32% at 50% 114%,
+      75% 48% at 50% 112%,
       color-mix(in oklab, var(--sun-core) 85%, transparent) 0,
       color-mix(in oklab, var(--sun) 62%, transparent) 26%,
       color-mix(in oklab, var(--sun-deep) 42%, transparent) 56%,
