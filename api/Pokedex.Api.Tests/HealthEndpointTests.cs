@@ -10,7 +10,7 @@ public class HealthEndpointTests(WebApplicationFactory<Program> factory) : IClas
     {
         var client = factory.CreateClient();
 
-        var response = await client.GetAsync("/api/health");
+        var response = await client.GetAsync("/api/health", TestContext.Current.CancellationToken);
 
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
     }
