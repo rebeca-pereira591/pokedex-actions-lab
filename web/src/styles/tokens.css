@@ -15,9 +15,9 @@
   --ink-on-dark: #ffffff;
 
   /* el sol */
-  --sun-core: #ffd28a;
-  --sun: #ff7a3d;
-  --sun-deep: #8a2a14;
+  --sun-core: #bfe3ff;
+  --sun: #3d8bff;
+  --sun-deep: #14328a;
 
   /* superficie de las tarjetas y paneles */
   --panel-top: rgba(255, 255, 255, 0.075);
