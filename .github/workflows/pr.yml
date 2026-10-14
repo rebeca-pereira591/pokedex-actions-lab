@@ -1,0 +1,257 @@
+# Checks de cada PR. Corre siempre (sin `paths:`), decide adentro qué partes revisar, y el job
+# "PR gate" da un único veredicto. Ese es el único check que la regla de main exige.
+name: PR checks
+
+on:
+  pull_request:          # sin `paths:` a propósito: un check requerido tiene que reportar siempre
+  workflow_dispatch:     # para correrlo a mano desde la pestaña Actions
+
+# Un push nuevo al mismo PR cancela la corrida anterior: sólo importa el último commit.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+# El token del workflow sólo puede leer el repo. Cada job pide más si lo necesita.
+permissions:
+  contents: read
+
+jobs:
+  changes:
+    name: Detectar cambios
+    runs-on: ubuntu-latest
+    outputs:
+      web: ${{ steps.filter.outputs.web }}
+      api: ${{ steps.filter.outputs.api }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # historia completa, para poder comparar contra la base del PR
+      - id: filter
+        name: Qué partes toca el PR
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          # A mano (workflow_dispatch) no hay PR: se revisa todo.
+          if [ -z "$BASE" ]; then
+            echo "web=true" >> "$GITHUB_OUTPUT"
+            echo "api=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          files=$(git diff --name-only "$BASE"...HEAD)
+          echo "Archivos del PR:"; echo "$files"
+          # Lo compartido (los archivos de CI, la config de pnpm, global.json) cuenta para la parte que afecta.
+          web=false; api=false
+          echo "$files" | grep -qE '^(web/|package\.json|pnpm-lock\.yaml|pnpm-workspace\.yaml|\.npmrc|\.github/)' && web=true
+          echo "$files" | grep -qE '^(api/|fixtures/|global\.json|\.github/)' && api=true
+          echo "web=$web" >> "$GITHUB_OUTPUT"
+          echo "api=$api" >> "$GITHUB_OUTPUT"
+
+  web:
+    name: Front (lint, build)
+    needs: changes
+    if: needs.changes.outputs.web == 'true'
+    runs-on: ubuntu-latest
+    env:
+      HUSKY: 0   # en CI no hace falta instalar los hooks de git
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6   # toma la versión de "packageManager" del package.json de la raíz
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: web/.nvmrc
+          cache: pnpm               # guarda las descargas de pnpm entre corridas
+      - name: Instalar dependencias
+        run: pnpm install --frozen-lockfile   # falla si el lockfile no coincide con los package.json
+      - name: Lint
+        working-directory: web
+        # --reporter=github: cada error sale como anotación, marcado en la línea exacta del diff
+        run: pnpm exec biome check --reporter=github .
+      - name: Type check y build
+        working-directory: web
+        # Los errores de tsc salen como anotación (setup-node registra su formato), pero con la ruta
+        # relativa a web/ ("src/..."), y GitHub las busca desde la raíz del repo: se antepone "web/".
+        # `shell: bash` activa pipefail; sin eso el paso tomaría el código de salida de sed (0) y daría
+        # verde aunque el build falle.
+        shell: bash
+        run: pnpm build 2>&1 | sed -E 's#^(src/)#web/\1#'
+
+  web-tests:
+    # Sin la matriz en el nombre: si el job se saltea, GitHub no la resuelve y mostraría el texto
+    # literal. GitHub agrega el shard solo: "Front tests (1)", "(2)", "(3)".
+    name: Front tests
+    needs: changes
+    if: needs.changes.outputs.web == 'true'
+    runs-on: ubuntu-latest
+    # Los tests repartidos en 3 máquinas en paralelo. La suite es chica: es para aprender la técnica,
+    # que en una suite grande baja los minutos de espera.
+    strategy:
+      fail-fast: false   # si un shard falla, los otros terminan igual: se ven todos los tests rotos
+      matrix:
+        shard: [1, 2, 3]
+    env:
+      HUSKY: 0
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: web/.nvmrc
+          cache: pnpm
+      - name: Instalar dependencias
+        run: pnpm install --frozen-lockfile
+      - name: Tests
+        working-directory: web
+        # Cada shard deja su parte (resultados y cobertura) en .vitest/blob. El umbral de cobertura se
+        # apaga acá: un shard ve sólo un tercio de los tests y nunca llegaría. Se chequea al juntarlos.
+        run: >-
+          pnpm exec vitest run --shard=${{ matrix.shard }}/${{ strategy.job-total }}
+          --reporter=default --reporter=blob --coverage --coverage.thresholds.lines=0
+      - uses: actions/upload-artifact@v7
+        with:
+          name: vitest-blob-${{ matrix.shard }}
+          path: web/.vitest/blob
+          include-hidden-files: true   # .vitest es una carpeta oculta: sin esto no sube nada
+          if-no-files-found: error     # si el shard no dejó su parte, es rojo
+          retention-days: 1
+
+  web-coverage:
+    name: Front cobertura
+    needs: [changes, web-tests]
+    if: needs.changes.outputs.web == 'true'
+    runs-on: ubuntu-latest
+    env:
+      HUSKY: 0
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: web/.nvmrc
+          cache: pnpm
+      - name: Instalar dependencias
+        run: pnpm install --frozen-lockfile
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: vitest-blob-*
+          merge-multiple: true   # los tres shards en la misma carpeta
+          path: web/.vitest/blob
+      - name: Cobertura total
+        working-directory: web
+        # Junta los 3 shards y chequea el umbral de vite.config.ts. El error de Vitest se convierte en
+        # anotación para que aparezca en el comentario del PR. `shell: bash` por pipefail, como en el build.
+        shell: bash
+        run: >-
+          pnpm exec vitest run --merge-reports --coverage 2>&1
+          | sed -E 's/^ERROR: (Coverage .*)/::error title=Cobertura del front::\1/'
+
+  api:
+    name: Back (build, tests)
+    needs: changes
+    if: needs.changes.outputs.api == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.x
+      - name: Restaurar paquetes
+        run: dotnet restore api/Pokedex.slnx
+      - name: Build
+        run: dotnet build api/Pokedex.slnx --no-restore -c Release
+      - name: Tests
+        run: >-
+          dotnet test --solution api/Pokedex.slnx --no-build -c Release
+          --coverlet --coverlet-output-format cobertura --coverlet-exclude-by-file "**/obj/**"
+          --results-directory "${{ github.workspace }}/TestResults"
+      - name: Cobertura
+        # Un poco por debajo de lo que hay hoy (99,7 % de líneas): la cobertura no puede bajar.
+        run: node .github/scripts/coverage-check.mjs TestResults 95 "del back"
+
+  secrets:
+    name: Secretos
+    # Corre en todo PR, toque lo que toque: un secreto puede estar en cualquier archivo.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # hace falta la historia para revisar cada commit del PR, no sólo el último
+      - name: Instalar gitleaks
+        env:
+          VERSION: 8.30.1
+        run: |
+          # Se descarga el binario oficial y se verifica su checksum antes de usarlo: si alguien
+          # reemplazara el archivo publicado, el checksum no coincidiría.
+          base="https://github.com/gitleaks/gitleaks/releases/download/v$VERSION"
+          curl -sSLO "$base/gitleaks_${VERSION}_linux_x64.tar.gz"
+          curl -sSLO "$base/gitleaks_${VERSION}_checksums.txt"
+          grep "linux_x64.tar.gz" "gitleaks_${VERSION}_checksums.txt" | sha256sum -c -
+          tar -xzf "gitleaks_${VERSION}_linux_x64.tar.gz" gitleaks
+      - name: Buscar secretos en los commits del PR
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+        shell: bash
+        run: |
+          # Revisa cada commit del PR (no sólo el estado final): un secreto borrado en un commit
+          # posterior sigue en la historia. A mano (sin PR) revisa todo el repo.
+          range=${BASE:+$BASE..HEAD}
+          ./gitleaks git . --log-opts="$range" --redact --no-banner \
+            --report-format json --report-path leaks.json || found=true
+          # Cada hallazgo, como anotación en el archivo y la línea (el valor nunca se muestra: --redact).
+          jq -r '.[] | "::error file=\(.File),line=\(.StartLine),title=Secreto (\(.RuleID))::Posible secreto en el commit \(.Commit[0:7]). Si es real, revocarlo: borrarlo del código no alcanza, queda en la historia."' leaks.json
+          [ -z "$found" ]
+
+  dependencies:
+    name: Dependencias
+    # Compara las dependencias del PR contra main y falla si se agrega una con una vulnerabilidad
+    # conocida. Las que ya estaban en main no cuentan: las maneja Dependabot.
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Revisar dependencias nuevas   # con nombre: sin él, el comentario lo toma por un paso de preparación
+        uses: actions/dependency-review-action@v5
+        with:
+          fail-on-severity: moderate
+
+  gate:
+    name: PR gate
+    needs: [changes, web, web-tests, web-coverage, api, secrets, dependencies]
+    if: always()   # corre aunque un job anterior falle o se saltee: siempre da un veredicto
+    runs-on: ubuntu-latest
+    steps:
+      - name: Veredicto
+        run: |
+          echo "changes=${{ needs.changes.result }} web=${{ needs.web.result }} web-tests=${{ needs.web-tests.result }} web-coverage=${{ needs.web-coverage.result }} api=${{ needs.api.result }} secrets=${{ needs.secrets.result }} dependencies=${{ needs.dependencies.result }}"
+          [ "${{ needs.changes.result }}" = "success" ] || { echo "No se pudo detectar qué cambió."; exit 1; }
+          # El escaneo de secretos corre siempre: si no terminó en success (aunque sea "skipped"), es rojo.
+          [ "${{ needs.secrets.result }}" = "success" ] || { echo "El escaneo de secretos terminó en: ${{ needs.secrets.result }}"; exit 1; }
+          # web-tests es una matriz: su resultado es "failure" si falló cualquiera de los shards.
+          for r in "${{ needs.web.result }}" "${{ needs.web-tests.result }}" "${{ needs.web-coverage.result }}" "${{ needs.api.result }}" "${{ needs.dependencies.result }}"; do
+            case "$r" in
+              success|skipped) ;;   # skipped = el PR no tocaba esa parte
+              *) echo "Un job terminó en: $r"; exit 1 ;;
+            esac
+          done
+          echo "Todo en orden."
+
+  report:
+    name: Resultados
+    needs: [changes, web, web-tests, web-coverage, api, secrets, dependencies, gate]
+    # Siempre, salvo en PRs que vienen de un fork: ahí el token no puede escribir comentarios.
+    if: always() && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    # Este job no es requerido: si la API falla, el comentario no sale, pero el merge lo decide el gate.
+    permissions:
+      contents: read        # checkout del script
+      actions: read         # leer los jobs y pasos del run
+      checks: read          # leer las anotaciones de cada job
+      pull-requests: write  # crear y editar el comentario
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: .github/scripts   # sólo hace falta el script
+      - name: Tabla de resultados
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: node .github/scripts/pr-report.mjs

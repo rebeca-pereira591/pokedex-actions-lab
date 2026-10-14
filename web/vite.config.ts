@@ -3,6 +3,9 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  // En GitHub Pages la app vive en una subcarpeta (/pokedex-actions-playground/pr-preview/pr-12/): el
+  // workflow la pasa en VITE_BASE. En local queda en la raíz.
+  base: process.env.VITE_BASE ?? "/",
   plugins: [react()],
   server: {
     // En desarrollo, /api va al backend .NET local
@@ -12,5 +15,21 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: ["./src/test/setup.ts"],
     css: { modules: { classNameStrategy: "non-scoped" } },
+    coverage: {
+      provider: "v8",
+      // Todo el código de la app, aunque ningún test lo importe: así un archivo nuevo sin tests cuenta.
+      include: ["src/**/*.{ts,tsx}"],
+      exclude: [
+        "src/**/*.test.{ts,tsx}",
+        "src/**/*.stories.tsx",
+        "src/test/**",
+        "src/mocks/**",
+        "src/main.tsx",
+        "src/**/*.d.ts",
+      ],
+      reporter: ["text-summary", "text"],
+      // Un poco por debajo de lo que hay hoy (91,5 % de líneas): la cobertura no puede bajar.
+      thresholds: { lines: 90 },
+    },
   },
 });

@@ -9,6 +9,7 @@ node_modules/
 dist/
 storybook-static/
 coverage/
+.vitest/
 *.log
 
 # Editores y sistema
@@ -22,3 +23,7 @@ Thumbs.db
 # Variables locales
 .env.local
 .env.*.local
+
+# Playwright
+playwright-report/
+test-results/
